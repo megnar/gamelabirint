@@ -21,7 +21,6 @@ massiv(lst)
 
 
 def main():
-    """ тут типа функции вызываю ну ты знаешь да"""
     global IN_GAME
     if IN_GAME:
         s.move(lvl)
@@ -30,7 +29,6 @@ def main():
         head_coords = c.coords(s.segment.instance)
         x1, y1, x2, y2 = head_coords
 
-        '''проверка на вхождение в поле для лабирирнта я знаю что можно было запилить функцию или чет подобное но я даун и решил вручную ебашить'''
         if y2 > 0 and y1 < 105:
             if x1 > (lst[0]) * 80 and x2 < (lst[0] + 1) * 80:
                 IN_GAME = True
@@ -243,7 +241,6 @@ def retry(i):
     main()
     root.mainloop()
 
-#это  я тоже спздил но тут функции тип привязать клаву и значения лево право и т д
 c.grid()
 
 c.focus_set()
